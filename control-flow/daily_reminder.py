@@ -1,9 +1,9 @@
 
-Task = input('Enter your task:').lower()
+Task = input('Enter your task:')
 
-Time_bound =input('Is it time bound? (yes/no):').lower()
+Time_bound =input('Is it time-bound? (yes/no):')
 
-Priority = input(' Priority (high/medium/low):').lower()
+Priority = input(' Priority (high/medium/low):')
 
 match Priority:
     case 'high':
