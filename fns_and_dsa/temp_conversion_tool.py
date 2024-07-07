@@ -21,7 +21,7 @@ def main():
             fahrinheit = convert_to_fahrenheit(temp)
             print(f'{temp}°C is: {fahrinheit}°F')
         else:
-            print(f'{unit} is an invalid unit of measure')
+            print('Invalid temperature. Please enter a numeric value.')
             
 if __name__ == "__main__":
     main()
