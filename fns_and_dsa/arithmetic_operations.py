@@ -6,7 +6,7 @@ def perform_operation(num1, num2, operation):
     if operation =='add':
         result = num1 + num2
         return result
-    elif operation == 'multipy':
+    elif operation == 'multiply':
         result = num1 * num2
         return result
     elif operation == 'subtract':
