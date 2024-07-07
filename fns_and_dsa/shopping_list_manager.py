@@ -30,13 +30,13 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item_name = input('Enter an item to be added:')
+            item_name = input('Enter the item to add:')
             add_Item(item_name)
             # Prompt for and add an item
             pass
         elif choice == '2':
             # Prompt for and remove an item
-            item_to_remove = input('Enter item to be removed:')
+            item_to_remove = input('Enter the item to remove:')
             remove_item(shopping_list, item_to_remove)
             pass
         elif choice == '3':
