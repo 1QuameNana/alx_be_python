@@ -4,7 +4,8 @@ def display_current_datetime():
         1.The current date and time
         2. A future date using the timedelta class"""
    
-    current_datetime = datetime.datetime.now()
+    current_date = datetime.now()
+    current_datetime = current_date.strftime("%Y-%m-%d %H:%M:%S")
     print(current_datetime)
     
     
