@@ -9,33 +9,33 @@ class Book:
         return self.is_checked_out
 
     def __str__(self):
-        return f"{self.title} by {self.author}, {'Checked out' if self.is_checked_out else 'Available'}"
-
-class Library(Book):
+        return f"{self.book_id}: {self.title} by {self.author}, {'Checked out' if self.is_checked_out else 'Available'}"
+    
+class Library:
     def __init__(self):
-        super.__init__(self, title, author, is_checked_out=False)
-        self._books = []
+        self._books = {}
 
     def add_book(self, title):
         if title in self._books:
-            return("This title already exists.")
+            return("This book ID already exists.")
         else:
-            self._books.append(title)
-    def check_out_book(self, title):
-        if title not in self.books:
+            self._books[title] = title
+            return("Book added successfully.")
+    def check_out_book(self, title ):
+        if title not in self._books:
             return("Book not found.")
-        elif self._books[title].self.is_checked_out:
+        elif self._books[title].is_checked_out:
             return("Book is already checked out.")
         else:
-            self._books[title].self.is_checked_out = True
+            self._books[title].is_checked_out = True
             return("Book checked out successfully.")  
     def return_book(self, title):
         if title not in self._books:
             return("Book not found.")
-        elif not self._books[title].self.is_checked_out:
+        elif not self._books[title].is_checked_out:
             return("Book is not checked out.")
         else:
-            self._books[title].self.is_checked_out = False
+            self._books[title].is_checked_out = False
             return("Book checked in successfully.")
     def list_available_books(self):
-        return(self._books)
+        return self._books
