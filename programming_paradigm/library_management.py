@@ -37,5 +37,5 @@ class Library(Book):
         else:
             self._books[title].self.is_checked_out = False
             return("Book checked in successfully.")
-        def list_availabele_books(self):
-            return(self._books)
+    def list_availabele_books(self):
+        return(self._books)
