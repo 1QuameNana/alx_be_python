@@ -5,14 +5,14 @@ class Book:
         self.is_checked_out = is_checked_out
     def return_book(self):
         return self.title 
-        def is_checked_out(self):
-            return self.is_checked_out
+    def is_checked_out(self):
+        return self.is_checked_out
 
     def __str__(self):
         return f"{self.title} by {self.author}, {'Checked out' if self.is_checked_out else 'Available'}"
 
 class Library(Book):
-    def __init__(self, title, author, is_checked_out=False, ):
+    def __init__(self):
         super.__init__(self, title, author, is_checked_out=False)
         self._books = []
 
