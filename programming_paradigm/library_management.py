@@ -13,13 +13,13 @@ class Book:
     
 class Library:
     def __init__(self):
-        self._books = {}
+        self._books = []
 
     def add_book(self, title):
         if title in self._books:
             return("This book ID already exists.")
         else:
-            self._books[title] = title
+            self._books.title
             return("Book added successfully.")
     def check_out_book(self, title ):
         if title not in self._books:
