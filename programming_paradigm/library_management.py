@@ -57,7 +57,7 @@ class Library:
             
             return f'{title} is returned successfully'
         
-    def listavailablebooks(self):
+    def list_available_books(self):
         """ Prints the available books for viewing"""
         for book in self._books: 
             print(book)
