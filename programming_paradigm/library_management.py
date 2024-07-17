@@ -1,4 +1,4 @@
-class Book:
+Class Book:
     """creates a book class with attributes title author and also checks
     if the book is checked out or is available for borrowing
     """
@@ -25,7 +25,7 @@ class Book:
          
     
     
-class library:
+Class Library:
     """ Creates a library to add, check out, and return borrowed books by 
     referencing their titles
     """
