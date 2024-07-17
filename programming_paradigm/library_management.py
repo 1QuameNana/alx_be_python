@@ -1,4 +1,4 @@
-Class Book:
+class Book:
     """creates a book class with attributes title author and also checks
     if the book is checked out or is available for borrowing
     """
@@ -22,10 +22,8 @@ Class Book:
             return f'{self.title} is checked out'
         else:
             return f'{self.title} is available for borrowing '
-         
-    
-    
-Class Library:
+            
+class Library:
     """ Creates a library to add, check out, and return borrowed books by 
     referencing their titles
     """
